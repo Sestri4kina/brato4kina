@@ -1,4 +1,4 @@
-const generationsCounter = (state = 0, action) => {
+export default (state = 0, action) => {
   switch (action.type) {
     case 'SPEED_CONTROL':
       return state + 1;
@@ -7,8 +7,6 @@ const generationsCounter = (state = 0, action) => {
     case 'CLEAR':
       return 0;
     default:
-    return state;
+      return state;
   }
 };
-
-export default generationsCounter;

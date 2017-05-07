@@ -24,7 +24,7 @@ export function speedControl() {
   };
 }
 
-export function makeRandom() {
+export function makeRandomGrid() {
   return {
     type: 'MAKE_RANDOM'
   };
